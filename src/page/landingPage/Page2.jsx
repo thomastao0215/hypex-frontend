@@ -15,17 +15,20 @@ export default function Page2() {
         <div
           style={{
             position: 'absolute',
-            top: '43%',
+            top: '25%',
             right: '15%',
             zIndex: '1',
             height: '50%',
             width: '30%',
           }}
+          className="font-aldo"
         >
-          <p className="text-white">NFTs for</p>
-          <div style={{
-            margin: '0 auto',
-          }}
+          <p className="text-white text-6xl">NFTs for</p>
+          <div
+            style={{
+              margin: '0 auto',
+            }}
+            className="text-6xl"
           >
             <p
               style={{
@@ -45,14 +48,28 @@ export default function Page2() {
               sneakers
             </p>
           </div>
-          <p className="text-white">Everything in HypeX Metaverse will have a physical copy in the real world. Users can trade/collect NFTs to redeem the physical sneaker. It removes the authentication and delivery processes, thus, increasing the liquidity of the sneaker market.</p>
+          <br />
+          <br />
+          <div className="text-white text-2xl">
+            <p>
+              Everything in HypeX Metaverse will have a physical copy in the real world.
+            </p>
+            <br />
+            <p>
+              Users can trade/collect NFTs to redeem the physical sneaker.
+            </p>
+            <br />
+            <p>
+              It removes the authentication and delivery processes, thus, increasing the liquidity of the sneaker market.
+            </p>
+          </div>
         </div>
         <img
           style={{
             position: 'absolute',
-            top: '44%',
-            left: '2.5%',
-            height: '70vh',
+            top: '0%',
+            left: '-7%',
+            height: '100vh',
             zIndex: '1',
           }}
           src={ShoeImage}

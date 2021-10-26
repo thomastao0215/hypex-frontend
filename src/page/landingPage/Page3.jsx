@@ -15,15 +15,46 @@ export default function Page3() {
         <div
           style={{
             position: 'absolute',
-            top: '43%',
+            top: '35%',
             left: '15%',
             zIndex: '1',
             height: '50%',
             width: '30%',
           }}
+          className="font-aldo"
         >
-          <p className="text-white">FRACTIONALIZED NFTs</p>
-          <p className="text-white">Want to own a pair of Air Mag? HypeX offers fractionalized NFTs of physical sneakers. Users can spend 1/100 of the original price to own and wear in the HypeX metaverse.</p>
+          <div
+            style={{
+              margin: '0 auto',
+            }}
+            className="text-6xl"
+          >
+            <p
+              style={{
+                display: 'inline',
+              }}
+              className="text-purple-500"
+            >
+              FRACTIONALIZED
+              {' '}
+            </p>
+            <p
+              style={{
+                display: 'inline',
+              }}
+              className="text-white"
+            >
+              NFTs
+            </p>
+          </div>
+          <br />
+          <div className="text-white text-3xl">
+            <p>Want to own a pair of Air Mag?</p>
+            <br />
+            <p> HypeX offers fractionalized NFTs of physical sneakers.</p>
+            <br />
+            <p>Users can spend 1/100 of the original price to own and wear in the HypeX metaverse.</p>
+          </div>
         </div>
         <img
           style={{

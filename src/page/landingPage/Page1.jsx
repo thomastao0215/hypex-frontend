@@ -17,19 +17,27 @@ export default function Page1() {
           style={{
             position: 'absolute',
             top: '43%',
-            left: '7%',
+            left: '10%',
             zIndex: '1',
           }}
         >
-          <p className="text-white text-6xl">Metaverse for Sneaker Lovers</p>
-          <Button text="Start Now" action={null} />
+          <div className="text-white text-8xl font-aldo">
+            <p className="text-white">
+              Metaverse for
+            </p>
+            <p className="text-purple-500">
+              Sneaker Lovers
+            </p>
+          </div>
+
+          <Button text="EXPLORE" action={null} />
         </div>
         <img
           style={{
             position: 'absolute',
-            top: '20%',
-            right: '5%',
-            height: '75vh',
+            top: '22%',
+            right: '8%',
+            height: '78vh',
             zIndex: '1',
           }}
           src={Airmag}

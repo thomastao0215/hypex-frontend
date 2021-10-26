@@ -27,10 +27,10 @@ export default function Button({ text, action }) {
           style={{
             position: 'relative',
             marginTop: '15%',
-            left: '50%',
+            left: '45%',
             zIndex: '1',
           }}
-          className="text-white text-xl"
+          className="text-white text-3xl font-aldo"
         >
           {text}
         </p>

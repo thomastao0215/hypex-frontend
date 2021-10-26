@@ -1,6 +1,7 @@
 import React from 'react';
-import CardView from './page4/CardView';
+// import CardView from './page4/CardView';
 import SwirlImage from '../../image/Page4/swirl.png';
+import BannerImage from '../../image/Page4/banner.png';
 
 export default function Page4() {
   return (
@@ -22,13 +23,38 @@ export default function Page4() {
             width: '100%',
           }}
         >
-          <p className="text-white text-4xl text-center">Metaverse for Sneaker lovers</p>
-          <p className="text-white text-xl text-center">Benefits of the NFT</p>
+          <div className="font-aldo">
+            <div
+              style={{
+                margin: '0 auto',
+              }}
+              className="text-6xl text-center"
+            >
+              <p
+                style={{
+                  display: 'inline',
+                }}
+                className="text-white"
+              >
+                Metaverse for
+                {' '}
+              </p>
+              <p
+                style={{
+                  display: 'inline',
+                }}
+                className="text-purple-500"
+              >
+                Sneaker lovers
+              </p>
+            </div>
+            <p className="text-white text-2xl text-center">Benefits of the NFT</p>
+          </div>
         </div>
-        <div
+        {/* <div
           style={{
             position: 'absolute',
-            top: '20%',
+            top: '23%',
             zIndex: '1',
             height: '70%',
             width: '90%',
@@ -39,7 +65,18 @@ export default function Page4() {
           <CardView title="GAMES" content="By playing games and completing INTERACTIVE tasks, users can earn DAILY rewards" />
           <CardView title="CRYPTO FEATURES" content="Users can stake NFTs to earn yields as well as deposit their NFTs for collateral loans" />
           <CardView title="AND MORE" content="" />
-        </div>
+        </div> */}
+        <img
+          style={{
+            position: 'relative',
+            top: '25%',
+            height: '55%',
+            margin: 'auto',
+            zIndex: '1',
+          }}
+          src={BannerImage}
+          alt="BannerImage"
+        />
         <img
           style={{
             position: 'absolute',
