@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-blue-HypeX': '#16162B',
-      }
+      },
     },
   },
   variants: {
