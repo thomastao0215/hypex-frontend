@@ -34,11 +34,11 @@ export default function Page4() {
             width: '90%',
             left: '5%',
           }}
-          className="grid grid-cols-3 gap-2"
+          className="grid grid-cols-3 gap-5"
         >
-          <CardView />
-          <CardView />
-          <CardView />
+          <CardView title="GAMES" content="By playing games and completing INTERACTIVE tasks, users can earn DAILY rewards" />
+          <CardView title="CRYPTO FEATURES" content="Users can stake NFTs to earn yields as well as deposit their NFTs for collateral loans" />
+          <CardView title="AND MORE" content="" />
         </div>
         <img
           style={{

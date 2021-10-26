@@ -18,31 +18,20 @@ export default function Page8() {
             height: '5%',
             width: '100%',
           }}
-          className="text-white text-4xl text-center"
+          className="text-white text-5xl text-center"
         >
           Our Team
         </h1>
         <img
           style={{
             position: 'relative',
-            top: '13%',
-            height: '35%',
+            top: '15%',
+            height: '55%',
             margin: 'auto',
           }}
           src={TeamImage}
           alt="team"
         />
-        <h1
-          style={{
-            position: 'relative',
-            top: '18%',
-            height: '5%',
-            width: '100%',
-          }}
-          className="text-white text-4xl text-center"
-        >
-          Our Partner
-        </h1>
       </div>
     </div>
   );
