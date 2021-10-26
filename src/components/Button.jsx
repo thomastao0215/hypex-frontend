@@ -10,7 +10,14 @@ export default function Button({ text, action }) {
       width: '225',
     }}
     >
-      <button type="button" onClick={action}>
+      <button
+        style={{
+          height: '66px',
+          width: '190px',
+        }}
+        type="button"
+        onClick={action}
+      >
         <img
           style={{
             position: 'absolute',
@@ -26,8 +33,6 @@ export default function Button({ text, action }) {
         <p
           style={{
             position: 'relative',
-            marginTop: '15%',
-            left: '45%',
             zIndex: '1',
           }}
           className="text-white text-3xl font-aldo"
