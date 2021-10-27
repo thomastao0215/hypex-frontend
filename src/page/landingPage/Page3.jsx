@@ -60,8 +60,8 @@ export default function Page3() {
           style={{
             position: 'absolute',
             top: '30%',
-            right: '2.5%',
-            height: '70vh',
+            right: '7%',
+            height: '80vh',
             zIndex: '1',
           }}
           src={CardsImage}
