@@ -1,5 +1,5 @@
 import React from 'react';
-import CardsImage from '../../image/Page3/cards.png';
+import CardsImage from '../../image/Page3/card3.png';
 import SwirlImage from '../../image/Page3/swirl.png';
 
 export default function Page3() {

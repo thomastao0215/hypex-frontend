@@ -1,5 +1,5 @@
 import React from 'react';
-import ShoeImage from '../../image/Page2/shoe.png';
+import CardImage from '../../image/Page2/card2.png';
 import SwirlImage from '../../image/Page2/swirl.png';
 
 export default function Page2() {
@@ -15,7 +15,7 @@ export default function Page2() {
         <div
           style={{
             position: 'absolute',
-            top: '25%',
+            top: '20%',
             right: '15%',
             zIndex: '1',
             height: '50%',
@@ -67,13 +67,13 @@ export default function Page2() {
         <img
           style={{
             position: 'absolute',
-            top: '0%',
-            left: '-7%',
-            height: '100vh',
+            top: '20%',
+            left: '10%',
+            height: '80vh',
             zIndex: '1',
           }}
-          src={ShoeImage}
-          alt="shoe"
+          src={CardImage}
+          alt="card"
         />
         <img
           style={{
