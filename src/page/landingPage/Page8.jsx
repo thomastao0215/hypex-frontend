@@ -27,7 +27,7 @@ export default function Page8() {
           style={{
             position: 'relative',
             top: '20%',
-            height: '55%',
+            width: '80%',
             margin: 'auto',
             zIndex: '1',
           }}
