@@ -1,6 +1,7 @@
 import React from 'react';
 import CardImage from '../../image/Page2/card2.png';
 import SwirlImage from '../../image/Page2/swirl.png';
+import '../../css/animation.css';
 
 export default function Page2() {
   return (
@@ -72,6 +73,7 @@ export default function Page2() {
             height: '80vh',
             zIndex: '1',
           }}
+          className="hover"
           src={CardImage}
           alt="card"
         />
