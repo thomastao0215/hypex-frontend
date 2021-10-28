@@ -2,6 +2,7 @@ import React from 'react';
 import Airmag from '../../image/Page1/airmag.png';
 import SwirlImage from '../../image/Page1/swirl.png';
 import Button from '../../components/Button';
+import '../../css/animation.css';
 
 export default function Page1() {
   return (
@@ -40,6 +41,7 @@ export default function Page1() {
             height: '78vh',
             zIndex: '1',
           }}
+          className="hover"
           src={Airmag}
           alt="glove"
         />

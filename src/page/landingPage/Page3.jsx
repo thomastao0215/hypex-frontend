@@ -64,6 +64,7 @@ export default function Page3() {
             height: '80vh',
             zIndex: '1',
           }}
+          className="hover-3d"
           src={CardsImage}
           alt="cards"
         />
