@@ -42,7 +42,7 @@ export default function LandingPage() {
             top: '50%',
             height: 'auto',
             transform: 'translateY(-50%)',
-            right: isMobile ? '90%' : '2%',
+            right: isMobile ? '92%' : '2%',
             zIndex: '1000',
           }}
           className="align-middle"
