@@ -21,5 +21,7 @@ module.exports = {
     indent: ['error', 2],
     'max-len': 'off',
     'react/prop-types': 'off',
+    'jsx-a11y/interactive-supports-focus': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
   },
 };
