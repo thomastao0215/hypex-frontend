@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from '../image/HypeXWhite.png';
 import background from '../image/landingBG.png';
 import LandingPageContent from './LandingPageContent';
+import SocialMediaBar from './landingPage/SocialMediaBar';
 
 export default function LandingPage() {
   return (
@@ -27,12 +28,25 @@ export default function LandingPage() {
             style={{
               position: 'absolute',
               top: '0',
-              left: '2',
-              height: '8vh',
+              left: '1%',
+              height: '10vh',
               zIndex: '1000',
             }}
           />
         </span>
+        <div
+          style={{
+            position: 'absolute',
+            top: '50%',
+            height: 'auto',
+            transform: 'translateY(-50%)',
+            right: '1%',
+            zIndex: '1000',
+          }}
+          className="align-middle"
+        >
+          <SocialMediaBar />
+        </div>
       </div>
       <LandingPageContent />
     </div>
