@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 import Airmag from '../../image/Page1/airmag.png';
 import SwirlImage from '../../image/Page1/swirl.png';
 import Button from '../../components/Button';
@@ -11,18 +12,20 @@ export default function Page1() {
         position: 'relative',
         top: '0',
         right: '0',
-        height: '50%',
+        height: '100%',
       }}
       >
         <div
           style={{
             position: 'absolute',
-            top: '43%',
-            left: '10%',
+            top: '25%',
+            left: isMobile ? '50%' : '10%',
+            transform: isMobile ? 'translateX(-50%)' : 'none',
             zIndex: '1',
+            width: 'fit-content',
           }}
         >
-          <div className="text-white text-8xl font-aldo">
+          <div className={`text-white font-aldo ${isMobile ? 'text-5xl' : 'text-8xl'}`}>
             <p className="text-white">
               Metaverse for
             </p>
@@ -31,14 +34,23 @@ export default function Page1() {
             </p>
           </div>
 
-          <Button text="EXPLORE" action={null} />
+          <div style={isMobile ? {
+            width: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          } : null}
+          >
+            <Button text="EXPLORE" action={null} />
+          </div>
+
         </div>
         <img
           style={{
             position: 'absolute',
-            top: '50%',
+            top: isMobile ? '55%' : '30%',
             right: '8%',
-            height: '55vh',
+            height: isMobile ? '25%' : '55%',
             zIndex: '1',
           }}
           className="hover"
