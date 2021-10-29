@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 import {
   FaTwitter, FaDiscord, FaTelegram, FaInstagram,
 } from 'react-icons/fa';
@@ -7,11 +8,11 @@ const redirect = (url) => {
   window.location = url;
 };
 
-const iconMrgin = 'mb-3';
+const iconMrgin = 'mb-6';
 
 export default function SocialMediaBar() {
   return (
-    <div className="grid grid-cols-1 text-3xl text-white">
+    <div className={`grid grid-cols-1 text-white ${isMobile ? 'text-l' : 'text-3xl'}`}>
       <span
         role="link"
         className={iconMrgin}

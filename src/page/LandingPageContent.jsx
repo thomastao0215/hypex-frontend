@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Page1 from './landingPage/Page1';
 import Page2 from './landingPage/Page2';
@@ -17,18 +18,24 @@ export default function LandingPageContent() {
           <div className="section">
             <Page1 />
           </div>
-          <div className="section">
-            <Page2 />
-          </div>
-          <div className="section">
-            <Page3 />
-          </div>
-          <div className="section">
-            <Page4 />
-          </div>
-          <div className="section">
-            <Page8 />
-          </div>
+          {isMobile ? null
+            : (
+              <>
+                <div className="section">
+                  <Page2 />
+                </div>
+                <div className="section">
+                  <Page3 />
+                </div>
+                <div className="section">
+                  <Page4 />
+                </div>
+                <div className="section">
+                  <Page8 />
+                </div>
+              </>
+            )}
+
         </ReactFullpage.Wrapper>
       )}
     />

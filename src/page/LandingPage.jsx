@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 import Icon from '../image/HypeXWhite.png';
 import background from '../image/landingBG.png';
 import LandingPageContent from './LandingPageContent';
@@ -28,7 +29,8 @@ export default function LandingPage() {
             style={{
               position: 'absolute',
               top: '0',
-              left: '1%',
+              left: isMobile ? '50%' : '3%',
+              transform: 'translateX(-50%)',
               height: '10vh',
               zIndex: '1000',
             }}
@@ -40,7 +42,7 @@ export default function LandingPage() {
             top: '50%',
             height: 'auto',
             transform: 'translateY(-50%)',
-            right: '1%',
+            right: isMobile ? '92%' : '2%',
             zIndex: '1000',
           }}
           className="align-middle"
