@@ -43,7 +43,7 @@ export default function Page4() {
                 style={{
                   display: 'inline',
                 }}
-                className="text-purple-500"
+                className="text-hypex-purple"
               >
                 Sneaker lovers
               </p>

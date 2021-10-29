@@ -7,12 +7,14 @@ const redirect = (url) => {
   window.location = url;
 };
 
+const iconMrgin = 'mb-3';
+
 export default function SocialMediaBar() {
   return (
-    <div className="grid grid-cols-1 text-5xl text-white">
+    <div className="grid grid-cols-1 text-3xl text-white">
       <span
         role="link"
-        className="mb-6"
+        className={iconMrgin}
         onClick={() => {
           redirect('https://www.instagram.com/HypeX_io/');
         }}
@@ -21,7 +23,7 @@ export default function SocialMediaBar() {
       </span>
       <span
         role="link"
-        className="mb-6"
+        className={iconMrgin}
         onClick={() => {
           redirect('https://twitter.com/HypeX_io');
         }}
@@ -30,7 +32,7 @@ export default function SocialMediaBar() {
       </span>
       <span
         role="link"
-        className="mb-6"
+        className={iconMrgin}
         onClick={() => {
           redirect('https://discord.com/invite/hypeX');
         }}
@@ -39,7 +41,7 @@ export default function SocialMediaBar() {
       </span>
       <span
         role="link"
-        className="mb-6"
+        className={iconMrgin}
         onClick={() => {
           redirect('https://t.me/HypeX_Official');
         }}

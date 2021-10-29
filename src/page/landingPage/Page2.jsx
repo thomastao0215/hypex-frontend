@@ -35,7 +35,7 @@ export default function Page2() {
               style={{
                 display: 'inline',
               }}
-              className="text-purple-500"
+              className="text-hypex-purple"
             >
               real-world
               {' '}
