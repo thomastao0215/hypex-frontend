@@ -26,7 +26,7 @@ export default function Page1() {
             <p className="text-white">
               Metaverse for
             </p>
-            <p className="text-purple-500">
+            <p className="text-hypex-purple">
               Sneaker Lovers
             </p>
           </div>
@@ -36,9 +36,9 @@ export default function Page1() {
         <img
           style={{
             position: 'absolute',
-            top: '22%',
+            top: '50%',
             right: '8%',
-            height: '78vh',
+            height: '55vh',
             zIndex: '1',
           }}
           className="hover"

@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         'dark-blue-HypeX': '#16162B',
+        'hypex-purple': '#FF01FF',
       },
       fontFamily: {
         aldo: ['AldoApache'],

@@ -33,7 +33,7 @@ export default function Page3() {
               style={{
                 display: 'inline',
               }}
-              className="text-purple-500"
+              className="text-hypex-purple"
             >
               FRACTIONALIZED
               {' '}
