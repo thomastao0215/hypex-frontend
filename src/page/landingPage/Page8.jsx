@@ -18,6 +18,7 @@ export default function Page8() {
             top: '10%',
             height: '5%',
             width: '100%',
+            textShadow: '2px 4px black',
           }}
           className="text-white font-aldo text-6xl text-center"
         >

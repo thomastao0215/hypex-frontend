@@ -23,6 +23,7 @@ export default function Page1() {
             transform: isMobile ? 'translateX(-50%)' : 'none',
             zIndex: '1',
             width: 'fit-content',
+            textShadow: '2px 4px black',
           }}
         >
           <div className={`text-white font-aldo ${isMobile ? 'text-4xl' : 'text-8xl'} mb-4`}>
@@ -40,7 +41,7 @@ export default function Page1() {
             justifyContent: 'center',
           } : null}
           >
-            <Button text="EXPLORE" action={null} />
+            <Button text="COMING SOON" action={null} />
           </div>
 
         </div>
@@ -48,7 +49,7 @@ export default function Page1() {
           style={{
             position: 'absolute',
             top: isMobile ? '57%' : '30%',
-            right: '7%',
+            right: isMobile ? '7%' : '10%',
             height: isMobile ? '25%' : '55%',
             zIndex: '1',
           }}

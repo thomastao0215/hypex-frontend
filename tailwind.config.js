@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         aldo: ['AldoApache'],
+        alata: ['Alata'],
       },
     },
   },

@@ -33,6 +33,7 @@ export default function LandingPage() {
               transform: 'translateX(-50%)',
               height: '10vh',
               zIndex: '1000',
+              filter: 'drop-shadow(5px 5px 4px black)',
             }}
           />
         </span>
@@ -42,7 +43,7 @@ export default function LandingPage() {
             top: '50%',
             height: 'auto',
             transform: 'translateY(-50%)',
-            right: isMobile ? '92%' : '2%',
+            right: isMobile ? '92%' : '1%',
             zIndex: '1000',
           }}
           className="align-middle"

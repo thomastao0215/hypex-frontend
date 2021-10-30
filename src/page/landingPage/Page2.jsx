@@ -22,36 +22,39 @@ export default function Page2() {
             height: '50%',
             width: '30%',
           }}
-          className="font-aldo"
         >
-          <p className="text-white text-6xl">NFTs for</p>
-          <div
-            style={{
-              margin: '0 auto',
-            }}
-            className="text-6xl"
-          >
-            <p
+          <div className="text-6xl font-aldo">
+            <p className="text-white">NFTs for</p>
+            <div
               style={{
-                display: 'inline',
+                margin: '0 auto',
+                textShadow: '2px 4px black',
               }}
-              className="text-hypex-purple"
             >
-              real-world
-              {' '}
-            </p>
-            <p
-              style={{
-                display: 'inline',
-              }}
-              className="text-white"
-            >
-              sneakers
-            </p>
+              <p
+                style={{
+                  display: 'inline',
+                }}
+                className="text-hypex-purple"
+              >
+                real-world
+                {' '}
+              </p>
+              <p
+                style={{
+                  display: 'inline',
+                }}
+                className="text-white"
+              >
+                sneakers
+              </p>
+            </div>
+
           </div>
+
           <br />
           <br />
-          <div className="text-white text-2xl">
+          <div style={{ textShadow: '2px 2px black' }} className="text-white text-2xl text-alata">
             <p>
               Everything in HypeX Metaverse will have a physical copy in the real world.
             </p>
@@ -68,9 +71,9 @@ export default function Page2() {
         <img
           style={{
             position: 'absolute',
-            top: '20%',
-            left: '10%',
-            height: '80vh',
+            top: '30%',
+            left: '13%',
+            height: '65vh',
             zIndex: '1',
           }}
           className="hover"

@@ -27,6 +27,7 @@ export default function Page4() {
             <div
               style={{
                 margin: '0 auto',
+                textShadow: '2px 4px black',
               }}
               className="text-6xl text-center"
             >
