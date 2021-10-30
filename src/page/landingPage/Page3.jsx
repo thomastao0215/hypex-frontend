@@ -26,6 +26,7 @@ export default function Page3() {
           <div
             style={{
               margin: '0 auto',
+              textShadow: '2px 4px black',
             }}
             className="text-6xl"
           >
@@ -48,7 +49,7 @@ export default function Page3() {
             </p>
           </div>
           <br />
-          <div className="text-white text-3xl">
+          <div style={{ textShadow: '2px 2px black' }} className="text-white text-3xl">
             <p>Want to own a pair of Air Mag?</p>
             <br />
             <p> HypeX offers fractionalized NFTs of physical sneakers.</p>

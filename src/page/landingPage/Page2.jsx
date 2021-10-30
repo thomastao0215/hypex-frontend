@@ -28,6 +28,7 @@ export default function Page2() {
           <div
             style={{
               margin: '0 auto',
+              textShadow: '2px 4px black',
             }}
             className="text-6xl"
           >
@@ -51,7 +52,7 @@ export default function Page2() {
           </div>
           <br />
           <br />
-          <div className="text-white text-2xl">
+          <div style={{ textShadow: '2px 2px black' }} className="text-white text-2xl">
             <p>
               Everything in HypeX Metaverse will have a physical copy in the real world.
             </p>
@@ -68,9 +69,9 @@ export default function Page2() {
         <img
           style={{
             position: 'absolute',
-            top: '20%',
-            left: '10%',
-            height: '80vh',
+            top: '30%',
+            left: '13%',
+            height: '65vh',
             zIndex: '1',
           }}
           className="hover"
