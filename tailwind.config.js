@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         aldo: ['AldoApache'],
         alata: ['Alata'],
+        gothic: ['Gothic'],
       },
     },
   },

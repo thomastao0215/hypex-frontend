@@ -54,7 +54,7 @@ export default function Page2() {
 
           <br />
           <br />
-          <div style={{ textShadow: '2px 2px black' }} className="text-white text-2xl text-alata">
+          <div style={{ textShadow: '2px 2px black' }} className="text-white text-2xl text-gothic">
             <p>
               Everything in HypeX Metaverse will have a physical copy in the real world.
             </p>
