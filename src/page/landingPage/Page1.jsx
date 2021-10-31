@@ -1,11 +1,11 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
 import Airmag from '../../image/Page1/airmag.png';
 import SwirlImage from '../../image/Page1/swirl.png';
 import Button from '../../components/Button';
 import '../../css/animation.css';
 
-export default function Page1() {
+export default function Page1(props) {
+  const { isMobile } = props;
   return (
     <div className="h-screen">
       <div style={{

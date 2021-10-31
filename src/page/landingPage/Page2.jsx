@@ -3,7 +3,8 @@ import CardImage from '../../image/Page2/card2.png';
 import SwirlImage from '../../image/Page2/swirl.png';
 import '../../css/animation.css';
 
-export default function Page2() {
+export default function Page2(props) {
+  const { isMobile } = props;
   return (
     <div className="h-screen">
       <div style={{
@@ -16,14 +17,15 @@ export default function Page2() {
         <div
           style={{
             position: 'absolute',
-            top: '20%',
-            right: '15%',
+            top: '25%',
+            right: isMobile ? '' : '15%',
             zIndex: '1',
             height: '50%',
-            width: '30%',
+            width: isMobile ? '100%' : '30%',
+            'text-align': isMobile ? 'center' : '',
           }}
         >
-          <div className="text-6xl font-aldo">
+          <div className={`font-aldo ${isMobile ? 'text-3xl' : 'text-6xl'} mb-4`}>
             <p className="text-white">NFTs for</p>
             <div
               style={{
@@ -54,7 +56,25 @@ export default function Page2() {
 
           <br />
           <br />
-          <div style={{ textShadow: '2px 2px black' }} className="text-white text-2xl text-alata">
+          <div
+            className="img"
+            style={{
+              'text-align': isMobile ? 'center' : '',
+            }}
+          >
+            <img
+              style={{
+                width: '70vw',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                display: isMobile ? '' : 'none',
+              }}
+              className="hover"
+              src={CardImage}
+              alt="card"
+            />
+          </div>
+          <div style={{ textShadow: '2px 2px black', 'text-align': isMobile ? 'left' : '', padding: isMobile ? '1rem' : '' }} className={`text-white ${isMobile ? 'text-sm' : 'text-2xl'} text-alata `}>
             <p>
               Everything in HypeX Metaverse will have a physical copy in the real world.
             </p>
@@ -75,6 +95,7 @@ export default function Page2() {
             left: '13%',
             height: '65vh',
             zIndex: '1',
+            display: isMobile ? 'none' : 'block',
           }}
           className="hover"
           src={CardImage}

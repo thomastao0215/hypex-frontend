@@ -2,7 +2,8 @@ import React from 'react';
 import CardsImage from '../../image/Page3/card3.png';
 import SwirlImage from '../../image/Page3/swirl.png';
 
-export default function Page3() {
+export default function Page3(props) {
+  const { isMobile } = props;
   return (
     <div className="h-screen">
       <div style={{
@@ -16,10 +17,11 @@ export default function Page3() {
           style={{
             position: 'absolute',
             top: '35%',
-            left: '15%',
+            left: isMobile ? '' : '15%',
             zIndex: '1',
             height: '50%',
-            width: '30%',
+            width: isMobile ? '100%' : '30%',
+            'text-align': isMobile ? 'center' : '',
           }}
         >
           <div
@@ -27,7 +29,7 @@ export default function Page3() {
               margin: '0 auto',
               textShadow: '2px 4px black',
             }}
-            className="text-6xl font-aldo"
+            className={`font-aldo ${isMobile ? 'text-3xl' : 'text-6xl'}`}
           >
             <p
               style={{
@@ -48,7 +50,18 @@ export default function Page3() {
             </p>
           </div>
           <br />
-          <div style={{ textShadow: '2px 2px black' }} className="text-white text-3xl text-alata">
+          <img
+            style={{
+              height: '90vw',
+              zIndex: '1',
+              display: isMobile ? 'block' : 'none',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+            src={CardsImage}
+            alt="cards"
+          />
+          <div style={{ textShadow: '2px 2px black', 'text-align': isMobile ? 'left' : '', padding: isMobile ? '1rem' : '' }} className={`text-white ${isMobile ? 'text-sm' : 'text-3xl'} text-alata `}>
             <p>Want to own a pair of Air Mag?</p>
             <br />
             <p> HypeX offers fractionalized NFTs of physical sneakers.</p>
@@ -61,8 +74,9 @@ export default function Page3() {
             position: 'absolute',
             top: '30%',
             right: '7%',
-            height: '80vh',
+            height: isMobile ? '25%' : '80vh',
             zIndex: '1',
+            display: isMobile ? 'none' : 'block',
           }}
           className="hover-3d"
           src={CardsImage}

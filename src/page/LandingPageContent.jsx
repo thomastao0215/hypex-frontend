@@ -16,25 +16,20 @@ export default function LandingPageContent() {
       render={() => (
         <ReactFullpage.Wrapper>
           <div className="section">
-            <Page1 />
+            <Page1 isMobile={isMobile} />
           </div>
-          {isMobile ? null
-            : (
-              <>
-                <div className="section">
-                  <Page2 />
-                </div>
-                <div className="section">
-                  <Page3 />
-                </div>
-                <div className="section">
-                  <Page4 />
-                </div>
-                <div className="section">
-                  <Page8 />
-                </div>
-              </>
-            )}
+          <div className="section">
+            <Page2 isMobile={isMobile} />
+          </div>
+          <div className="section">
+            <Page3 isMobile={isMobile} />
+          </div>
+          <div className="section">
+            <Page4 isMobile={isMobile} />
+          </div>
+          <div className="section">
+            <Page8 isMobile={isMobile} />
+          </div>
 
         </ReactFullpage.Wrapper>
       )}
