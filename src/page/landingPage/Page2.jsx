@@ -17,7 +17,7 @@ export default function Page2(props) {
         <div
           style={{
             position: 'absolute',
-            top: '20%',
+            top: '25%',
             right: isMobile ? '' : '15%',
             zIndex: '1',
             height: '50%',

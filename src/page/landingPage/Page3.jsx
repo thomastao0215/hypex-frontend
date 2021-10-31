@@ -61,7 +61,7 @@ export default function Page3(props) {
             src={CardsImage}
             alt="cards"
           />
-          <div style={{ textShadow: '2px 2px black', 'text-align': isMobile ? 'left' : '', padding: isMobile ? '2rem' : '' }} className={`text-white ${isMobile ? 'text-sm' : 'text-3xl'} text-alata `}>
+          <div style={{ textShadow: '2px 2px black', 'text-align': isMobile ? 'left' : '', padding: isMobile ? '1rem' : '' }} className={`text-white ${isMobile ? 'text-sm' : 'text-3xl'} text-alata `}>
             <p>Want to own a pair of Air Mag?</p>
             <br />
             <p> HypeX offers fractionalized NFTs of physical sneakers.</p>
