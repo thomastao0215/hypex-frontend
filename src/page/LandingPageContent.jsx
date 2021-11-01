@@ -13,21 +13,22 @@ import Page8 from './landingPage/Page8';
 export default function LandingPageContent() {
   return (
     <ReactFullpage
+      bigSectionsDestination
       render={() => (
         <ReactFullpage.Wrapper>
-          <div className="section">
+          <div className="section fp-auto-height-responsive">
             <Page1 isMobile={isMobile} />
           </div>
-          <div className="section">
+          <div className="section fp-auto-height-responsive">
             <Page2 isMobile={isMobile} />
           </div>
-          <div className="section">
+          <div className="section fp-auto-height-responsive">
             <Page3 isMobile={isMobile} />
           </div>
-          <div className="section">
+          <div className="section fp-auto-height-responsive">
             <Page4 isMobile={isMobile} />
           </div>
-          <div className="section">
+          <div className="section fp-auto-height-responsive">
             <Page8 isMobile={isMobile} />
           </div>
 
